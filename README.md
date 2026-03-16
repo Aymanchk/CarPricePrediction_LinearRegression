@@ -32,7 +32,7 @@ car-price-predictor/
 ├── app.py                   # Flask server + model loading + /predict endpoint
 ├── car_price_model.pkl      # Trained Linear Regression model
 ├── CarPrice_Assignment.csv  # Dataset
-├── model.py                 # Model training script
+├── train_model.py           # Model training script
 ├── templates/
 │   └── index.html           # Web interface (Stage 3)
 └── README.md
@@ -44,12 +44,12 @@ car-price-predictor/
 
 **1. Install dependencies**
 ```bash
-pip install flask pandas scikit-learn numpy
+pip install requirements.txt
 ```
 
 **2. Train the model (if needed)**
 ```bash
-python model.py
+python train_model.py
 ```
 
 **3. Start the Flask server**
